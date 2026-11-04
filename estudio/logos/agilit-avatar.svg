@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 512 512">
+<title>Agilit - avatar</title>
+<defs>
+<linearGradient id="agl-g1" gradientUnits="userSpaceOnUse" x1="0.135108" y1="0" x2="0.980781" y2="0" gradientTransform="matrix(173.843511, -100.668296, 100.668296, 173.843511, 584.169026, 445.467739)">
+<stop offset="0" stop-color="#8dbe4b"/>
+<stop offset="0.0273" stop-color="#8cbd51"/>
+<stop offset="0.0352" stop-color="#8abd53"/>
+<stop offset="0.0781" stop-color="#88bc5c"/>
+<stop offset="0.1211" stop-color="#86bc66"/>
+<stop offset="0.1289" stop-color="#84bb68"/>
+<stop offset="0.1445" stop-color="#84bc6b"/>
+<stop offset="0.168" stop-color="#83bb70"/>
+<stop offset="0.1758" stop-color="#81bb72"/>
+<stop offset="0.1953" stop-color="#80ba76"/>
+<stop offset="0.2344" stop-color="#7eba7d"/>
+<stop offset="0.2461" stop-color="#7cba7f"/>
+<stop offset="0.2617" stop-color="#7cba83"/>
+<stop offset="0.2695" stop-color="#7ab984"/>
+<stop offset="0.3086" stop-color="#78b98b"/>
+<stop offset="0.3281" stop-color="#77b88f"/>
+<stop offset="0.3516" stop-color="#75b893"/>
+<stop offset="0.3594" stop-color="#75b894"/>
+<stop offset="0.3633" stop-color="#73b895"/>
+<stop offset="0.3828" stop-color="#73b899"/>
+<stop offset="0.3906" stop-color="#71b799"/>
+<stop offset="0.4102" stop-color="#70b79d"/>
+<stop offset="0.4766" stop-color="#6bb6a8"/>
+<stop offset="0.5" stop-color="#6ab6ac"/>
+<stop offset="0.5039" stop-color="#68b5ac"/>
+<stop offset="0.5234" stop-color="#68b5af"/>
+<stop offset="0.5312" stop-color="#66b5b0"/>
+<stop offset="0.5547" stop-color="#64b5b4"/>
+<stop offset="0.5742" stop-color="#64b5b7"/>
+<stop offset="0.582" stop-color="#62b4b8"/>
+<stop offset="0.5977" stop-color="#61b4ba"/>
+<stop offset="0.6445" stop-color="#5db4c1"/>
+<stop offset="0.6523" stop-color="#5bb3c3"/>
+<stop offset="0.668" stop-color="#5bb3c4"/>
+<stop offset="0.6758" stop-color="#59b3c6"/>
+<stop offset="0.6953" stop-color="#59b3c9"/>
+<stop offset="0.7031" stop-color="#57b2ca"/>
+<stop offset="0.7148" stop-color="#57b2cb"/>
+<stop offset="0.7266" stop-color="#55b2cd"/>
+<stop offset="0.7422" stop-color="#54b2cf"/>
+<stop offset="0.75" stop-color="#52b2d0"/>
+<stop offset="0.7656" stop-color="#52b1d2"/>
+<stop offset="0.7695" stop-color="#50b1d2"/>
+<stop offset="0.793" stop-color="#4fb1d6"/>
+<stop offset="0.8008" stop-color="#4db1d6"/>
+<stop offset="0.8164" stop-color="#4db1d9"/>
+<stop offset="0.8203" stop-color="#4bb0d9"/>
+<stop offset="0.8398" stop-color="#4bb0db"/>
+<stop offset="0.8438" stop-color="#48b0dc"/>
+<stop offset="0.8633" stop-color="#48b0df"/>
+<stop offset="0.8672" stop-color="#46afdf"/>
+<stop offset="0.8867" stop-color="#45afe1"/>
+<stop offset="0.8984" stop-color="#42afe3"/>
+<stop offset="1" stop-color="#42afe4"/>
+</linearGradient>
+</defs>
+<g transform="translate(-2549.3018 -1347.2939) scale(4.118394)">
+<g id="circulo">
+<path fill="url(#agl-g1)" d="M 619.003906 389.300781 C 619.003906 423.628906 646.832031 451.460938 681.164062 451.460938 C 715.496094 451.460938 743.324219 423.628906 743.324219 389.300781 C 743.324219 354.96875 715.496094 327.140625 681.164062 327.140625 C 646.832031 327.140625 619.003906 354.96875 619.003906 389.300781"/>
+</g>
+<g id="simbolo">
+<path fill="#ffffff" d="M 672.148438 387.824219 C 677.34375 381.597656 685.757812 367.410156 670.675781 352.957031 C 662.214844 349.300781 652.160156 355.140625 652.160156 364.414062 C 652.160156 367.199219 653.324219 369.871094 655.390625 371.839844 Z M 672.148438 387.824219"/>
+<path fill="#ffffff" d="M 713.070312 378.746094 L 676.214844 356.183594 C 680.371094 361.757812 681.984375 367.726562 681.019531 373.992188 C 680.03125 380.402344 676.566406 385.699219 673.597656 389.203125 L 673.699219 389.300781 L 655.386719 406.757812 C 653.324219 408.726562 652.164062 411.398438 652.164062 414.183594 C 652.164062 424.105469 663.667969 430.097656 672.421875 424.738281 L 713.070312 399.851562 C 721.132812 394.917969 721.132812 383.683594 713.070312 378.746094"/>
+</g>
+</g>
+</svg>

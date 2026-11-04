@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Carrossel vetorial · capa, miolo e fechamento</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  /* Vetorial: ícones de linha, blocos de cor, elemento sazonal plano. Três lâminas de exemplo; um carrossel real mistura famílias. */
+  .lista { display: flex; flex-direction: column; margin-top: 10px; }
+  .lista .it { display: flex; align-items: flex-start; gap: 28px; padding: 26px 0; border-top: 2px solid var(--border); }
+  .lista .it:last-child { border-bottom: 2px solid var(--border); }
+  .lista .it .n { font: 800 44px/1 var(--head); color: var(--brand-primary); min-width: 70px; padding-top: 4px; }
+  .lista .it b { display: block; font: 700 34px/1.2 var(--body); color: var(--bg-dark); margin-bottom: 6px; }
+  .lista .it span { font: 400 28px/1.4 var(--body); color: var(--ink-muted); }
+  .navy .btn { margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="peca f45 navy" data-nome="lamina-01">
+  <div class="frame-natal"></div>
+  <svg class="estrela" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,4 61,38 97,38 68,59 79,94 50,72 21,94 32,59 3,38 39,38" fill="var(--green-700)" stroke="#fff" stroke-width="4" stroke-linejoin="round"/><circle cx="50" cy="52" r="7" fill="var(--amber-400)"/></svg>
+  <div class="inner">
+    <div class="pill campanha">Natal organizado</div>
+    <h1 style="margin-top:34px">Natal sem dívida nova.</h1>
+    <p class="lead">Cinco passos para fechar o ano com o que você tem.</p>
+  </div>
+  <img class="marca" src="../logos/agilit-logo-horizontal-branco.svg" alt="Agilit">
+  <div class="prog"><div class="track"><div class="fill" style="width:12%"></div></div><span>1/8</span></div>
+</div>
+
+<div class="peca f45 paper" data-nome="lamina-02">
+  <div class="frame-natal"></div>
+  <div class="inner center">
+    <div class="rotulo">Passo 1</div>
+    <h2>Some tudo o que vence até 10 de janeiro.</h2>
+    <div class="lista">
+      <div class="it"><div class="n">01</div><div><b>Contas fixas</b><span>Luz, água, aluguel, internet.</span></div></div>
+      <div class="it"><div class="n">02</div><div><b>Parcelas</b><span>Cartão, carnê, boleto parcelado.</span></div></div>
+      <div class="it"><div class="n">03</div><div><b>Impostos do início do ano</b><span>IPVA, IPTU, material escolar.</span></div></div>
+    </div>
+  </div>
+  <img class="marca" src="../logos/agilit-logo-horizontal.svg" alt="Agilit">
+  <div class="prog"><div class="track"><div class="fill" style="width:25%"></div></div><span>2/8</span></div>
+</div>
+
+<div class="peca f45 navy" data-nome="lamina-08">
+  <div class="frame-natal"></div>
+  <div class="inner">
+    <div class="rotulo">Simulação sem compromisso</div>
+    <h2>Troca de juro caro por parcela fixa.</h2>
+    <p class="body">Quem analisa é o banco. Correspondente Bancário Banco do Brasil.</p>
+    <a class="btn">Simular pelo WhatsApp</a>
+  </div>
+  <img class="marca" src="../logos/agilit-logo-horizontal-branco.svg" alt="Agilit">
+  <div class="prog"><div class="track"><div class="fill" style="width:100%"></div></div><span>8/8</span></div>
+</div>
+</body>
+</html>

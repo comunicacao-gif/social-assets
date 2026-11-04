@@ -1,0 +1,8 @@
+node_modules/
+.sentinela-estado-*.json
+.DS_Store
+Thumbs.db
+*.psd
+*.afdesign
+*.afphoto
+saida/
