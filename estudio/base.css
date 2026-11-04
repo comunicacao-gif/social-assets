@@ -48,7 +48,7 @@ p.body { font: 400 34px/1.5 var(--body); color: var(--ink-muted); max-width: 860
 .pill.campanha { background: var(--green-700); color: #fff; }
 .pill.outline { border: 2px solid var(--border); color: var(--ink-muted); }
 .pill.navy { background: var(--bg-dark); color: #fff; }
-.btn { display: inline-flex; align-self: flex-start; align-items: center; gap: 16px; padding: 30px 48px; border-radius: 999px; background: var(--cta-bg); color: var(--cta-text); font: 700 34px/1 var(--body); border: 3px solid var(--cta-border); }
+.btn { text-decoration: none; display: inline-flex; align-self: flex-start; align-items: center; gap: 16px; padding: 30px 48px; border-radius: 999px; background: var(--cta-bg); color: var(--cta-text); font: 700 34px/1 var(--body); border: 3px solid var(--cta-border); }
 .btn svg { width: 34px; height: 34px; }
 .assinatura { font: 600 22px/1.4 var(--body); color: var(--ink-muted); }
 .navy .assinatura, .foto .assinatura { color: var(--ink-muted-on-dark); }
