@@ -1,0 +1,83 @@
+/* base.css — layout comum das peças do estúdio Agilit (Manual 2.0).
+   Usa os tokens de tokens.css (cópia do agilit-site, docs/marca/manual-2.0/assets/tokens.css).
+   Formatos: .f45 1080×1350 (feed 4:5 e carrossel) · .f11 1080×1080 · .f916 1080×1920 (story, capa de reel). */
+@import url("tokens.css");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Montserrat:wght@300;400;600;700;900&display=swap");
+
+:root {
+  --head: 'Exo 2', sans-serif;
+  --body: 'Montserrat', sans-serif;
+  --veil: linear-gradient(150deg, rgb(32 85 169 / 8%) 15%, rgb(81 169 199 / 8%) 50%, rgb(111 181 161 / 8%) 85%);
+  --veil-dark: linear-gradient(150deg, rgb(32 85 169 / 20%) 15%, rgb(81 169 199 / 20%) 50%, rgb(111 181 161 / 20%) 85%);
+  --margem: 80px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #1a1d22; padding: 40px; display: flex; flex-wrap: wrap; gap: 40px; font-family: var(--body); }
+
+/* ---- a peça ---- */
+.peca { position: relative; overflow: hidden; flex: none; color: var(--ink); background: var(--paper); width: 1080px; height: 1350px; }
+.peca.f11 { height: 1080px; }
+.peca.f916 { height: 1920px; }
+.peca.paper { background: var(--paper); }
+.peca.paper::before { content: ""; position: absolute; inset: 0; background: var(--veil); pointer-events: none; }
+.peca.navy { background: var(--bg-dark); color: var(--ink-on-dark); }
+.peca.navy::before { content: ""; position: absolute; inset: 0; background: var(--veil-dark); pointer-events: none; }
+.peca.branco { background: var(--surface); }
+
+/* área útil: margem de 80 px; no story, topo 250 e base 340 livres (interface do Instagram) */
+.inner { position: absolute; inset: var(--margem); display: flex; flex-direction: column; justify-content: flex-end; padding-bottom: 150px; }
+.inner.center { justify-content: center; padding-bottom: 120px; }
+.inner.top { justify-content: flex-start; }
+.f916 .inner { top: 250px; bottom: 340px; padding-bottom: 150px; }
+
+/* ---- tipografia ---- */
+.rotulo { font: 600 22px/1 var(--body); letter-spacing: 4px; text-transform: uppercase; color: var(--brand-primary); margin-bottom: 34px; }
+.navy .rotulo, .foto .rotulo { color: var(--brand-secondary); }
+h1 { font: 800 84px/1.05 var(--head); letter-spacing: -1.5px; color: var(--bg-dark); margin-bottom: 34px; }
+h2 { font: 700 68px/1.08 var(--head); letter-spacing: -1px; color: var(--bg-dark); margin-bottom: 30px; }
+.navy h1, .navy h2, .foto h1, .foto h2 { color: #fff; }
+p.lead { font: 600 40px/1.3 var(--body); color: var(--ink); max-width: 880px; }
+p.body { font: 400 34px/1.5 var(--body); color: var(--ink-muted); max-width: 860px; }
+.navy p.lead, .foto p.lead { color: var(--ink-on-dark); }
+.navy p.body, .foto p.body { color: var(--ink-muted-on-dark); }
+.editorial h1 { font-family: var(--body); font-weight: 300; letter-spacing: -2px; font-size: 92px; line-height: 1.02; }
+.editorial h1 b { font-weight: 900; }
+
+/* ---- componentes ---- */
+.pill { display: inline-flex; align-self: flex-start; align-items: center; gap: 12px; padding: 12px 26px; border-radius: 999px; font: 700 24px/1 var(--body); letter-spacing: 1px; text-transform: uppercase; }
+.pill.campanha { background: var(--green-700); color: #fff; }
+.pill.outline { border: 2px solid var(--border); color: var(--ink-muted); }
+.pill.navy { background: var(--bg-dark); color: #fff; }
+.btn { display: inline-flex; align-self: flex-start; align-items: center; gap: 16px; padding: 30px 48px; border-radius: 999px; background: var(--cta-bg); color: var(--cta-text); font: 700 34px/1 var(--body); border: 3px solid var(--cta-border); }
+.btn svg { width: 34px; height: 34px; }
+.assinatura { font: 600 22px/1.4 var(--body); color: var(--ink-muted); }
+.navy .assinatura, .foto .assinatura { color: var(--ink-muted-on-dark); }
+.faixa-limao { height: 14px; width: 220px; background: var(--brand-accent); border-radius: 7px; margin-bottom: 40px; }
+
+/* marca: 300 px no canto inferior esquerdo, dentro da margem (mínimo 140 px) */
+.marca { position: absolute; left: var(--margem); bottom: var(--margem); width: 300px; height: auto; }
+.f916 .marca { bottom: 340px; }
+.simbolo { position: absolute; right: var(--margem); top: var(--margem); width: 72px; height: auto; }
+.f916 .simbolo { top: 250px; }
+
+/* rodapé de carrossel: progresso + contador à direita */
+.prog { position: absolute; right: var(--margem); bottom: 92px; display: flex; align-items: center; gap: 18px; width: 320px; }
+.prog .track { flex: 1; height: 6px; border-radius: 3px; background: rgb(0 0 0 / 10%); overflow: hidden; }
+.navy .prog .track, .foto .prog .track { background: rgb(255 255 255 / 16%); }
+.prog .fill { height: 100%; background: var(--brand-primary); border-radius: 3px; }
+.navy .prog .fill, .foto .prog .fill { background: var(--brand-accent); }
+.prog span { font: 600 24px/1 var(--body); color: var(--ink-muted); }
+.navy .prog span, .foto .prog span { color: var(--ink-muted-on-dark); }
+
+/* ---- camadas de imagem ---- */
+.img-fundo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.grad-leitura { position: absolute; inset: 0; background: linear-gradient(180deg, rgb(2 22 47 / 0%) 35%, rgb(2 22 47 / 72%) 72%, rgb(2 22 47 / 92%) 100%); }
+.bloco { position: absolute; left: 0; right: 0; bottom: 0; height: 58%; background: var(--bg-dark); }
+.circulo { position: absolute; width: 640px; height: 640px; border-radius: 50%; background: var(--brand-secondary); opacity: .9; }
+.pessoa { position: absolute; bottom: 0; height: auto; object-fit: contain; }
+.placa { background: rgb(246 249 253 / 92%); border-radius: 28px; padding: 56px; backdrop-filter: blur(6px); }
+.numero { position: absolute; font: 900 900px/0.8 var(--body); color: var(--brand-primary); opacity: .08; letter-spacing: -40px; right: -40px; top: 40px; pointer-events: none; }
+
+/* sazonal: Natal (moldura verde-700, estrela plana), Ano Novo (estrelas ciano + âmbar) */
+.frame-natal { position: absolute; inset: 40px; border: 3px solid var(--green-700); border-radius: 28px; pointer-events: none; }
+.estrela { position: absolute; right: 110px; top: 100px; width: 170px; height: 170px; }

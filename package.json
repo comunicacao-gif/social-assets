@@ -1,0 +1,14 @@
+{
+  "name": "social-assets",
+  "private": true,
+  "type": "module",
+  "description": "Peças das redes sociais do GF Hub: fonte, imagens de origem e PNG finais, ligadas ao dashboard de marketing.",
+  "scripts": {
+    "render": "node estudio/scripts/render.mjs",
+    "checar": "node estudio/scripts/checar.mjs",
+    "test": "node --test estudio/scripts/*.test.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.63.0"
+  }
+}

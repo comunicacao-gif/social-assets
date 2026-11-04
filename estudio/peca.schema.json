@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/comunicacao-gif/social-assets/estudio/peca.schema.json",
+  "title": "peca.json — manifesto de uma peça das redes sociais",
+  "type": "object",
+  "required": ["peca_id", "titulo", "marca", "formato", "data_publicacao", "familia", "montagem", "versao", "imagens", "textos"],
+  "additionalProperties": false,
+  "properties": {
+    "peca_id": { "type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", "description": "id da peça no dashboard (/conteudo/peca/<id>)" },
+    "titulo": { "type": "string", "minLength": 3 },
+    "marca": { "type": "string", "enum": ["agilit"] },
+    "formato": { "type": "string", "enum": ["reel", "carrossel", "feed", "story"] },
+    "data_publicacao": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "familia": { "type": "string", "enum": ["A-foto-declaracao", "B-recorte", "C-editorial", "D-objeto-prova", "vetorial", "mista"] },
+    "montagem": { "type": "string", "enum": ["html", "figma", "figma+html"] },
+    "figma_url": { "type": "string", "pattern": "^https://www\\.figma\\.com/" },
+    "versao": { "type": "integer", "minimum": 1 },
+    "autor": { "type": "string", "enum": ["Claude", "Codex", "Gleidson", "Paulo"] },
+    "imagens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["arquivo", "origem", "pessoa"],
+        "additionalProperties": false,
+        "properties": {
+          "arquivo": { "type": "string", "pattern": "^fonte/imagens/" },
+          "origem": { "type": "string", "enum": ["chatgpt", "figma", "foto-real", "vetor", "banco-interno"] },
+          "prompt": { "type": "string", "description": "nome do prompt em estudio/prompts/ ou 'fonte/prompts-usados.md'" },
+          "pessoa": { "type": "boolean" },
+          "papel": { "type": "string", "enum": ["ilustrativa", "apresentador", "equipe-autorizada"], "description": "obrigatório quando pessoa = true; cliente e depoimento não são valores válidos" },
+          "autorizacao": { "type": "string", "description": "obrigatório em foto-real: quem autorizou, data e onde está o termo (nunca o documento aqui)" }
+        }
+      }
+    },
+    "textos": { "type": "array", "items": { "type": "string" }, "description": "toda copy que aparece nas lâminas, para a checagem de frases proibidas" },
+    "observacoes": { "type": "string" }
+  }
+}

@@ -1,0 +1,240 @@
+/* tokens.css - paleta cromática Agilit. Gerado por gerar.mjs; não editar à mão.
+   Cores oficiais (manual 2023, inalteradas): azul #306cb3 (blue-600), ciano #43afe4 (cyan-400), verde-limão #95c11f (green-400).
+   Verde do símbolo (menta, do vetor do manual, p.5): #71b79a = --brand-symbol-green; só degradê, véu e grafismo, nunca texto nem CTA.
+   Escalas em OKLCH (matiz fixo); contrastes em contraste.md. */
+
+:root {
+  color-scheme: light;
+  --white: #ffffff;
+
+  /* Azul 7683 C */
+  --blue-50: #eff6ff;
+  --blue-100: #c7dffe;
+  --blue-200: #a5c8f4;
+  --blue-300: #85b1e7;
+  --blue-400: #679ad8;
+  --blue-500: #4a83c7;
+  --blue-600: #306cb3;  /* cor oficial (âncora) */
+  --blue-700: #1d5494;
+  --blue-800: #0e3e73;
+  --blue-900: #052951;
+  --blue-950: #02162f;
+
+  /* Ciano 298 C */
+  --cyan-50: #ebf7ff;
+  --cyan-100: #bee7ff;
+  --cyan-200: #90d6fd;
+  --cyan-300: #67c3f3;
+  --cyan-400: #43afe4;  /* cor oficial (âncora) */
+  --cyan-500: #2794c5;
+  --cyan-600: #0b79a6;
+  --cyan-700: #005f84;
+  --cyan-800: #004663;
+  --cyan-900: #002f43;
+  --cyan-950: #001926;
+
+  /* Verde P 157-8 C */
+  --green-50: #effae0;
+  --green-100: #d6eeae;
+  --green-200: #bee07f;
+  --green-300: #a8d150;
+  --green-400: #95c11f;  /* cor oficial (âncora) */
+  --green-500: #7ba200;
+  --green-600: #648400;
+  --green-700: #4d6700;
+  --green-800: #384c00;
+  --green-900: #243200;
+  --green-950: #111a00;
+
+  /* Âmbar (alerta) */
+  --amber-50: #fff3e6;
+  --amber-100: #ffdeb8;
+  --amber-200: #ffc886;
+  --amber-300: #fbb253;
+  --amber-400: #ef9f27;  /* âncora: #EF9F27 do site */
+  --amber-500: #cc8300;
+  --amber-600: #a66a00;
+  --amber-700: #825200;
+  --amber-800: #603b00;
+  --amber-900: #402600;
+  --amber-950: #221200;
+
+  /* Vermelho (erro) */
+  --red-50: #fff2f0;
+  --red-100: #ffd0ca;
+  --red-200: #ffaca2;
+  --red-300: #fb877b;
+  --red-400: #ec665b;
+  --red-500: #da443d;
+  --red-600: #c41d20;  /* âncora criada: L do azul-600, C 0,20, H 27° */
+  --red-700: #a1000e;
+  --red-800: #7a0008;
+  --red-900: #550004;
+  --red-950: #320001;
+
+  /* Neutro azulado */
+  --neutral-50: #f6f9fd;
+  --neutral-100: #eaeef4;
+  --neutral-200: #d7dce4;
+  --neutral-300: #c1c7cf;
+  --neutral-400: #a9afb8;
+  --neutral-500: #8f969e;
+  --neutral-600: #747b83;
+  --neutral-700: #595f66;
+  --neutral-800: #3e4348;
+  --neutral-900: #24272b;
+  --neutral-950: #0c0d10;
+
+  /* Verde do símbolo (menta): só degradê, véu e grafismo; nunca texto nem CTA */
+  --symbol-green-300: #71b79a;  /* verde do símbolo (vetor do manual) */
+  --symbol-green-400: #5c9f84;
+  --symbol-green-500: #49876e;
+  --symbol-green-600: #37705a;
+  --symbol-green-700: #275946;
+
+  /* ===== Papéis semânticos (tema claro) ===== */
+  --brand-primary: var(--blue-600);  /* #306cb3 */
+  --brand-secondary: var(--cyan-400);  /* #43afe4 */
+  --brand-accent: var(--green-400);  /* #95c11f */
+  --brand-symbol-green: var(--symbol-green-300);  /* #71b79a */
+  --bg: var(--neutral-50);  /* #f6f9fd */
+  --bg-dark: var(--blue-900);  /* #052951 */
+  --bg-darker: var(--blue-950);  /* #02162f */
+  --surface: var(--white);
+  --surface-alt: var(--neutral-100);  /* #eaeef4 */
+  --paper: var(--neutral-50);  /* #f6f9fd */
+  --ink: var(--neutral-900);  /* #24272b */
+  --ink-muted: var(--neutral-700);  /* #595f66 */
+  --ink-on-dark: var(--neutral-50);  /* #f6f9fd */
+  --ink-muted-on-dark: var(--neutral-300);  /* #c1c7cf */
+  --border: var(--neutral-200);  /* #d7dce4 */
+  --border-strong: var(--neutral-600);  /* #747b83 */
+  --link: var(--blue-600);  /* #306cb3 */
+  --link-hover: var(--blue-800);  /* #0e3e73 */
+  --link-on-dark: var(--blue-300);  /* #85b1e7 */
+  --cta-bg: var(--green-400);  /* #95c11f */
+  --cta-bg-hover: var(--green-500);  /* #7ba200 */
+  --cta-text: var(--neutral-950);  /* #0c0d10 */
+  --cta-border: var(--green-600);  /* #648400 */
+  --cta-secondary-bg: var(--blue-600);  /* #306cb3 */
+  --cta-secondary-bg-hover: var(--blue-700);  /* #1d5494 */
+  --cta-secondary-text: var(--white);
+  --focus: var(--blue-600);  /* #306cb3 */
+  --focus-on-dark: var(--cyan-300);  /* #67c3f3 */
+  --success: var(--green-700);  /* #4d6700 */
+  --success-soft: var(--green-50);  /* #effae0 */
+  --success-border: var(--green-300);  /* #a8d150 */
+  --warning: #A35D00;
+  --warning-soft: #FFF8E6;
+  --warning-border: #EF9F27;
+  --warning-ink: #633806;
+  --danger: var(--red-600);  /* #c41d20 */
+  --danger-soft: var(--red-50);  /* #fff2f0 */
+  --danger-border: var(--red-300);  /* #fb877b */
+  --info: var(--cyan-700);  /* #005f84 */
+  --info-soft: var(--cyan-50);  /* #ebf7ff */
+  --info-border: var(--cyan-300);  /* #67c3f3 */
+  --whatsapp: #25D366;
+  --whatsapp-hover: #00c65a;
+  --whatsapp-text: var(--neutral-950);  /* #0c0d10 */
+
+  /* ===== Degradê do símbolo e véu de fundo ===== */
+  --gradient-symbol: linear-gradient(150deg, #2055a9 15%, #51a9c7 50%, #6fb5a1 85%);      /* (a) fiel ao vetor: canônico do símbolo e dos véus */
+  --gradient-palette: linear-gradient(150deg, #306cb3 15%, #43afe4 50%, #95c11f 85%);     /* (b) tokens: paleta inteira, peças de campanha */
+  --gradient-avatar: linear-gradient(60deg, #8dbe4b 0%, #42afe4 100%);   /* avatar oficial (p.5): caixa quadrada do círculo, símbolo branco */
+  --gradient-veil: linear-gradient(150deg, rgb(32 85 169 / 8%) 15%, rgb(81 169 199 / 8%) 50%, rgb(111 181 161 / 8%) 85%);
+
+  /* ===== Utilitários ===== */
+  --focus-ring: 3px solid var(--focus);
+  --focus-offset: 2px;
+}
+
+@supports (background: linear-gradient(in oklab, red, blue)) {
+  :root { --gradient-symbol: linear-gradient(150deg in oklab, #2055a9 15%, #51a9c7 50%, #6fb5a1 85%); --gradient-palette: linear-gradient(150deg in oklab, #306cb3 15%, #43afe4 50%, #95c11f 85%); }
+}
+
+/* Tema escuro automático (segue o sistema), a menos que a página force data-theme="light" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: var(--blue-950);  /* #02162f */
+    --bg-dark: var(--blue-950);  /* #02162f */
+    --surface: var(--blue-900);  /* #052951 */
+    --surface-alt: var(--blue-800);  /* #0e3e73 */
+    --paper: var(--blue-950);  /* #02162f */
+    --ink: var(--neutral-50);  /* #f6f9fd */
+    --ink-muted: var(--neutral-300);  /* #c1c7cf */
+    --border: var(--blue-800);  /* #0e3e73 */
+    --border-strong: var(--blue-500);  /* #4a83c7 */
+    --link: var(--blue-300);  /* #85b1e7 */
+    --link-hover: var(--blue-200);  /* #a5c8f4 */
+    --focus: var(--cyan-300);  /* #67c3f3 */
+    --cta-border: var(--green-400);  /* #95c11f */
+    --success: var(--green-500);  /* #7ba200 */
+    --success-soft: var(--green-900);  /* #243200 */
+    --success-border: var(--green-700);  /* #4d6700 */
+    --warning: var(--amber-500);  /* #cc8300 */
+    --warning-soft: var(--amber-900);  /* #402600 */
+    --warning-border: var(--amber-700);  /* #825200 */
+    --warning-ink: var(--amber-100);  /* #ffdeb8 */
+    --danger: var(--red-400);  /* #ec665b */
+    --danger-soft: var(--red-900);  /* #550004 */
+    --danger-border: var(--red-700);  /* #a1000e */
+    --info: var(--cyan-400);  /* #43afe4 */
+    --info-soft: var(--cyan-900);  /* #002f43 */
+    --info-border: var(--cyan-700);  /* #005f84 */
+    --gradient-veil: linear-gradient(150deg, rgb(32 85 169 / 20%) 15%, rgb(81 169 199 / 20%) 50%, rgb(111 181 161 / 20%) 85%);
+    --focus-ring: 3px solid var(--focus);
+  }
+}
+
+/* Tema escuro forçado (mesmos nomes e valores do bloco acima) */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: var(--blue-950);  /* #02162f */
+  --bg-dark: var(--blue-950);  /* #02162f */
+  --surface: var(--blue-900);  /* #052951 */
+  --surface-alt: var(--blue-800);  /* #0e3e73 */
+  --paper: var(--blue-950);  /* #02162f */
+  --ink: var(--neutral-50);  /* #f6f9fd */
+  --ink-muted: var(--neutral-300);  /* #c1c7cf */
+  --border: var(--blue-800);  /* #0e3e73 */
+  --border-strong: var(--blue-500);  /* #4a83c7 */
+  --link: var(--blue-300);  /* #85b1e7 */
+  --link-hover: var(--blue-200);  /* #a5c8f4 */
+  --focus: var(--cyan-300);  /* #67c3f3 */
+  --cta-border: var(--green-400);  /* #95c11f */
+  --success: var(--green-500);  /* #7ba200 */
+  --success-soft: var(--green-900);  /* #243200 */
+  --success-border: var(--green-700);  /* #4d6700 */
+  --warning: var(--amber-500);  /* #cc8300 */
+  --warning-soft: var(--amber-900);  /* #402600 */
+  --warning-border: var(--amber-700);  /* #825200 */
+  --warning-ink: var(--amber-100);  /* #ffdeb8 */
+  --danger: var(--red-400);  /* #ec665b */
+  --danger-soft: var(--red-900);  /* #550004 */
+  --danger-border: var(--red-700);  /* #a1000e */
+  --info: var(--cyan-400);  /* #43afe4 */
+  --info-soft: var(--cyan-900);  /* #002f43 */
+  --info-border: var(--cyan-700);  /* #005f84 */
+  --gradient-veil: linear-gradient(150deg, rgb(32 85 169 / 20%) 15%, rgb(81 169 199 / 20%) 50%, rgb(111 181 161 / 20%) 85%);
+  --focus-ring: 3px solid var(--focus);
+}
+
+/* Fundos sempre escuros (hero, rodapé): trocam foco e link para as versões sobre escuro */
+.on-dark {
+  background: var(--bg-dark);
+  color: var(--ink-on-dark);
+  --link: var(--link-on-dark);
+  --focus: var(--focus-on-dark);
+  --ink-muted: var(--ink-muted-on-dark);
+}
+
+/* Base recomendada */
+a { color: var(--link); text-decoration: underline; text-underline-offset: 0.15em; }
+a:hover { color: var(--link-hover); }
+:focus-visible { outline: var(--focus-ring); outline-offset: var(--focus-offset); }
+.btn-cta { background: var(--cta-bg); color: var(--cta-text); border: 1.5px solid var(--cta-border); }
+.btn-cta:hover { background: var(--cta-bg-hover); }
+.btn-whatsapp { background: var(--whatsapp); color: var(--whatsapp-text); }
+.btn-whatsapp:hover { background: var(--whatsapp-hover); }

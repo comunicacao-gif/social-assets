@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Família B · Recorte</title>
+<link rel="stylesheet" href="../base.css">
+<style>
+  /* B: pessoa recortada sobre bloco azul-marinho e círculo ciano; texto à esquerda; botão limão; marca branca. */
+  .b .bloco { height: 56%; }
+  .b .circulo { left: 560px; top: 360px; }
+  .b .pessoa { right: -70px; width: 720px; }
+  .b .topo { position: absolute; left: var(--margem); top: var(--margem); }
+  .b .texto { position: absolute; left: var(--margem); top: 640px; width: 500px; display: flex; flex-direction: column; gap: 28px; }
+  .b h2 { color: #fff; margin: 0; font-size: 60px; }
+  .b p.body { color: var(--ink-muted-on-dark); font-size: 28px; }
+</style>
+</head>
+<body>
+<div class="peca f45 paper b" data-nome="B-recorte">
+  <div class="bloco"></div>
+  <div class="circulo ignorar-estouro"></div>
+  <img class="pessoa ignorar-estouro" src="../referencias/exemplo-persona-recorte.png" alt="">
+  <div class="topo"><div class="rotulo">Natal organizado</div></div>
+  <div class="texto">
+    <h2>Resolver depois quase sempre custa mais caro.</h2>
+    <p class="body">Troca de juro caro por parcela fixa, antes das contas de janeiro.</p>
+    <a class="btn">Simular pelo WhatsApp</a>
+  </div>
+  <img class="marca" src="../logos/agilit-logo-horizontal-branco.svg" alt="Agilit">
+</div>
+</body>
+</html>
